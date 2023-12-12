@@ -1,14 +1,22 @@
 <template>
-    <div class="pt-14 ml-10 w-3/4 rounded-t-large bg-slate-600">
-        <h1 class="ml-1 font-nunito text-lg">My pet-projects Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non corporis voluptatem consectetur, ratione iusto harum voluptate voluptates. Consectetur voluptatibus laudantium atque accusamus doloribus numquam non iure commodi, quae eum dignissimos. </h1>
-        
-    </div>
+  <div class="pt-14 ml-10 w-3/4 rounded-t-large bg-slate-600 relative" >
+    <h1 class="ml-1 font-nunito text-lg absolute top-0 left-2">
+      My pet-projects
+    </h1>
+  <div > <!-- здесь будут карточки проектов -->
+    <Projects  />
+  </div >
+  <div class=" absolute top-0 right-0 ">
+   <Navbar /> 
+  </div>
+  
+  </div>
+
 </template>
 
 <script setup>
-
+ import Navbar from "../components/Navbar.vue";
+import Projects from "../components/Projects.vue"
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
