@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar w-64 rounded-large bg-slate-600 static">
+  <div class="sidebar border-2 border-blue-500 w-64 rounded-large static">
     <div class="flex justify-center m-7">
       <!-- див с фоткой, именем и плашкой "девелопер" !-->
       <img class="h-80 rounded-large m-5" src="../assets/avatar.jpg" alt="my photo" />
@@ -20,5 +20,7 @@
 <style lang="scss" scoped>
 .sidebar {
   height: 600px;
+  background-color: #002b683f;
+  
 }
 </style>

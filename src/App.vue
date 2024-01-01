@@ -2,8 +2,6 @@
   <div class="flex mx-20 relative">
     <SideCard />
     <RouterView />
-    
-    
   </div>
 </template>
 
