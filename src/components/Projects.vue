@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 
 <template>
-  <div class="grid grid-cols-1 ml-3 place-items-start">
+  <div class="grid grid-cols-1 ml-3 place-items-start  ">
     <div
-      class="project-card  bg-slate-400 rounded-large flex"
+      class="project-card ring rounded-large flex divide-blue-500/70 divide-x-4"
       v-for="project in projects"
       :key="project.id"
       :id="'project-' + project.id"
@@ -15,11 +15,10 @@
         alt="Project Icon"
       />
       <h3>{{ project.name }}</h3>
-      <p>{{ project.description }}</p>
-      <a v-if="project.link" :href="project.link"> View on github </a>
+      <a v-if="project.link" :href="project.link" target="_blank" class=" border-b-2 border-blue-500 hover:text-fuchsia-500"> View on github </a>
       </div>
 
-      <div v-if="project.details" v-html="formatDetails(project.details)" class="text-lg"></div>
+      <div v-if="project.details" v-html="formatDetails(project.details)" class="text-lg pl-3"></div>
 
     </div>
     
@@ -34,32 +33,31 @@ export default {
         {
           id: 1,
           name: 'To do on React',
-          description: 'First project on ReactJS',
           details: 'My first experience with React, my first acquaintance with frameworks, as well as libraries and the concept of spa. \n I learned to make commits and work with Git.\n Layout according to specifications, gets acquainted with react hooks.', 
           icon: 'todo-icon.svg',
           link: 'https://github.com/lYorktownl/My_kanban.git',
         },
         { id: 2, 
           name: 'Portfolio', 
-          description: 'Site portfolio', 
+          details: 'Site portfolio', 
           icon: 'portfolio-icon.svg',
           link: '',
         },
         { id: 3, 
           name: 'Timer', 
-          description: 'Obratnyi otstchet', 
+          details: 'Obratnyi otstchet', 
           icon: 'timer-icon.svg',
           link: '',
         },
         { id: 4, 
           name: 'Weather', 
-          description: 'Weather API', 
+          details: 'Weather API', 
           icon: 'weather-icon.svg',
           link: '',
         },
         { id: 5, 
           name: 'Landing', 
-          description: 'verstka po makety', 
+          details: 'verstka po makety', 
           icon: 'landing-icon.svg',
           link: '' 
         },
@@ -82,7 +80,7 @@ export default {
 
 <style scoped>
 .project-card {
-  border: 1px solid #ddd;
+  
   padding: 10px;
   margin: 10px;
   

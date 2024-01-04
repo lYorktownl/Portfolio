@@ -1,7 +1,7 @@
 <template>
-  <div class="backgrnd border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative">
-    <h1 class="ml-1 font-nunito text-lg absolute top-0 left-2">My pet-projects</h1>
-    <div>
+  <div class=" bg-gradient-to-br from-slate-200 to-blue-300 border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative">
+    <h1 class=" text-5xl font-medium font-nunito absolute top-5 left-7">My pet-projects</h1>
+    <div class="mt-10">
       <!-- здесь будут карточки проектов -->
       <Projects />
     </div>
@@ -17,7 +17,5 @@ import Projects from '../components/Projects.vue'
 </script>
 
 <style lang="scss" scoped>
-.backgrnd{
-  background-color: #428ffa33;
-}
+
 </style>

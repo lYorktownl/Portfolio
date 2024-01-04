@@ -5,7 +5,7 @@ const name = 'Nikita'
 </script>
 
 <template>
-  <main class="backgrnd border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large  relative">
+  <main class="bg-gradient-to-br from-slate-200 h-[90vh] to-blue-300 border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large  relative">
     <h1 class="-mt-8">HEllo! My name is {{ name }}</h1>
     <div>
       <p>
@@ -20,7 +20,5 @@ const name = 'Nikita'
   </main>
 </template>
 <style>
-.backgrnd {
-background-color: #002b683f;
-}
+
 </style>

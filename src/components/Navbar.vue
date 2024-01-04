@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex sticky h-fit p-3 bg-slate-200 rounded-tr-large rounded-bl-large">
+  <div class="flex sticky h-fit p-3 bg-slate-200 rounded-tr-large rounded-bl-large border-b-2 border-sky-950">
     <ul class="flex space-x-4">
       <li>
         <RouterLink
@@ -65,12 +65,16 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import Projects from './Projects.vue'
 
 const isProjectsMenuOpen = ref(false)
-const projects = Projects.data().projects
+const projects = ref([])
+
+onMounted(() => {
+  projects.value = Projects.data().projects
+})
 
 const toggleProjectsMenu = () => {
   isProjectsMenuOpen.value = !isProjectsMenuOpen.value

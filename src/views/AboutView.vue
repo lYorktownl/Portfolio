@@ -1,5 +1,5 @@
 <template>
-  <div class="backgrnd border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative">
+  <div class="bg-gradient-to-br from-slate-200 to-blue-300 min-h-fit h-[90vh] border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative">
     <h1 class="ml-3 -mt-8">This is an about page</h1>
     <div class="absolute top-0 right-0">
       <Navbar />
