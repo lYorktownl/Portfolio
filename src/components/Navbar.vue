@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex sticky h-fit p-3 bg-slate-200 rounded-tr-large rounded-bl-large border-b-2 border-sky-950">
+  <div class="flex sticky h-fit p-3 bg-slate-200 rounded-tr-large rounded-bl-large border-b-2 border-l-2 border-sky-950">
     <ul class="flex space-x-4">
       <li>
         <RouterLink

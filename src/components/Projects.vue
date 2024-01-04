@@ -3,7 +3,7 @@
 <template>
   <div class="grid grid-cols-1 ml-3 place-items-start  ">
     <div
-      class="project-card ring rounded-large flex divide-blue-500/70 divide-x-4"
+      class="p-[10px] m-[10px] ring rounded-large flex divide-blue-500/70 divide-x-4"
       v-for="project in projects"
       :key="project.id"
       :id="'project-' + project.id"
@@ -29,11 +29,11 @@
 export default {
   data() {
     return {
-      projects: [
+      projects: [ // в планах вынести все проекты в отдельный файл, но пока что так
         {
           id: 1,
           name: 'To do on React',
-          details: 'My first experience with React, my first acquaintance with frameworks, as well as libraries and the concept of spa. \n I learned to make commits and work with Git.\n Layout according to specifications, gets acquainted with react hooks.', 
+          details: 'Мой первый опыт работы с React, первое знакомство с фреймворками, библиотеками, понятием SPA и компенентным подходом. \n Научился делать коммиты и работать с Git.\n Верстка по тз, знакомство с реакт хуками.', 
           icon: 'todo-icon.svg',
           link: 'https://github.com/lYorktownl/My_kanban.git',
         },
@@ -68,7 +68,7 @@ export default {
     getIconPath(icon) {
       return `./src/assets/icons/${icon}`
     },
-    formatDetails (details) {
+    formatDetails (details) { //функция для пользоветельских переносов взамен css
         if (details){
           return details.includes ('\n') ? details.split('\n').map(paragraph => `<p>${paragraph}</p>`).join('') : details;
         }
@@ -79,10 +79,5 @@ export default {
 </script>
 
 <style scoped>
-.project-card {
-  
-  padding: 10px;
-  margin: 10px;
-  
-}
+
 </style>
