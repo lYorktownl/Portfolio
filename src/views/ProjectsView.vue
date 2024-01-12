@@ -1,21 +1,51 @@
 <template>
-  <div class=" bg-gradient-to-br from-slate-200 to-blue-300 border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative">
-    <h1 class=" text-5xl font-medium font-nunito absolute top-5 left-7">My pet-projects</h1>
-    <div class="mt-10">
+  <div
+    class="bgrnd bg-opacity-50 bg-gradient-to-b h-fit from-[#1c418688] via-[#1c41864d] to-black border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative"
+  >
+    <h1 class="text-5xl text-blue-200 font-semibold font-nunito absolute top-5 left-20">
+      My pet-projects
+    </h1>
+    <div class="mt-10 pb-16 text-blue-200">
       <!-- здесь будут карточки проектов -->
       <Projects />
     </div>
     <div class="absolute top-0 right-0">
       <Navbar />
     </div>
+    <div class="w-fit botom-0 right-0 absolute">
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script setup>
+import Footer from '../components/Footer.vue'
 import Navbar from '../components/Navbar.vue'
 import Projects from '../components/Projects.vue'
 </script>
 
 <style lang="scss" scoped>
+// .bgrnd{
+//   background: rgb(63,94,251);
+//   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+//   opacity: 100%;
 
+//}
+.bgrnd {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 </style>

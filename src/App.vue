@@ -1,6 +1,9 @@
 <template>
-  <div class="flex mx-20 relative">
-    <SideCard />
+  <div class="mx-20 relative xl:flex">
+    <div class="sticky h-fit">
+      <SideCard />
+    </div>
+
     <RouterView />
   </div>
 </template>

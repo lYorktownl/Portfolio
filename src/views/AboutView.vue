@@ -1,21 +1,75 @@
 <template>
-  <div class="bg-gradient-to-br from-slate-200 to-blue-300 min-h-fit h-[90vh] border-2 border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative">
-    <h1 class="ml-3 -mt-8">This is an about page</h1>
+  <div class="border-2 border-blue-500 pl-3 ml-10 w-3/4 relative">
+    <h1 class="top-1 left-1 text-4xl mt-1 pr-[240px] text- font-semibold text-blue-900">
+      Добро пожаловать в маленький мир моего кода!
+    </h1>
     <div class="absolute top-0 right-0">
       <Navbar />
     </div>
-    <div>
-      <p class="font-nunito" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-         voluptas libero possimus eum atque illum veritatis voluptate consectetur 
-         animi rerum laudantium illo nulla hic molestiae pariatur maiores unde ab assumenda?</p>
+    <div class="mt-6 mx-3 leading-relaxed">
+      <h2 class="text-xl">
+        Привет, меня зовут Никита, и я начинающий фронтенд разработчик с большой тягой к новым
+        знаниям и живым интересом к веб-разработке &#x1F525;
+      </h2>
+      <p class="font-nunito mt-2 text-lg">
+        Мой путь в веб-разработке начался еще со школы, когда я только начинал знакомиться с веб
+        интерфейсом и HTML. Тогда еще не было таких замечательных вещей, как React и Vue, к примеру,
+        но мне уже тогда полюбился фронтенд. И с тех пор я полностью погрузился в увлекательный мир
+        создания интерактивных и красочных веб-приложений.
+      </p>
+      <h2 class="text-xl mt-5">&#128187; Почему именно фронтенд?</h2>
+      <p class="text-lg">
+        Выбор фронтенда для меня стал результатом стремления к непосредственному визуальному
+        воплощению идей. В этой области я нашел идеальное сочетание творчества и технической
+        детализации.<br />Возможность немедленно видеть результат своей работы, работать с
+        интерфейсом и логикой веб-приложений, а также активное сообщество фронтенд-разработчиков,
+        делающее Интернет более удобным и функциональным, стали ключевыми моментами, определившими
+        мой выбор этого направления.
+      </p>
+      <h2 class="text-xl mt-5">&#x1F4A1; Обучение</h2>
+      <ul class="list-disc list-inside text-lg">
+        <li class="block">
+          <h4>Skillfactory</h4>
+          <span>2019-2020</span>
+          <p></p>
+        </li>
+        <li>
+          <h4>НГУЭУ, фундаментальная информатика и информационные технологии</h4>
+          <span>2019-н.в</span>
+          <p>4 курс</p>
+        </li>
+      </ul>
+      <div class="mt-5">
+        <h2 class="text-xl">&#x1F9F0; Мой стэк технологий</h2>
+        <ul class="list-disc list-inside text-lg">
+          <li>HTML, CSS, JavaScript</li>
+          <li>
+            Фреймворки и библиотеки: React, Vue3, Tailwind, а также поверхностное знакомство с
+            Angular, bootstrap, semainticUI
+          </li>
+          <li>Системы контроля версий: Git</li>
+          <li>Инструменты сборки: Webpack, Vite</li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="text-xl">&#x1F3AF;Моя миссия</h2>
+    <p class="text-lg">
+      Моя цель — не просто писать код, а создавать эффективные и элегантные решения для
+      пользователей. В моем портфолио вы найдете примеры моих проектов, которые отражают мою
+      преданность качественной веб-разработке. <br />
+      Спасибо за посещение моего портфолио! Давайте вместе создавать удивительные веб-приложения.
+    </p>
+    <div class="w-fit botom-0 right-0 absolute">
+      <Footer />
     </div>
   </div>
 </template>
 <script setup>
 import Navbar from '../components/Navbar.vue'
+import Footer from '../components/Footer.vue'
 </script>
 <style>
-.backgrnd{
+.backgrnd {
   background-color: #002b683f;
 }
 </style>
