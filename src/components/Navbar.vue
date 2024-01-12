@@ -1,37 +1,37 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex sticky h-fit p-3 bg-slate-200 rounded-tr-large rounded-bl-large border-b-2 border-l-2 border-sky-950">
+  <div class="flex sticky h-fit p-3 mt-2 border-sky-950">
     <ul class="flex space-x-4">
-      <li>
+      <!-- <li>
         <RouterLink
           class="px-4 py-2 border-2 border-blue-500 rounded-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white"
           to="/"
         >
           Home
         </RouterLink>
-      </li>
+      </li> -->
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 border-blue-500 rounded-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white"
-          to="/about"
+          class="px-4 py-2 border-2 border-blue-500 rounded-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white shadow hover:shadow-lg shadow-sky-600"
+          to="/"
         >
           About
         </RouterLink>
       </li>
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 border-blue-500 rounded-s-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white"
+          class="px-4 py-2 border-2 border-blue-500 rounded-s-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white shadow hover:shadow-lg shadow-sky-600"
           to="/projects"
         >
           Projects
         </RouterLink>
       </li>
-      <li class="relative" @click="toggleProjectsMenu">
+      <li class="relative space-x-0" @click="toggleProjectsMenu">
         <button
-          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-4 border-blue-500 rounded-e-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white"
+          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px] border-blue-500 rounded-e-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white shadow hover:shadow-lg shadow-sky-600"
         >
           <svg
-            class="arrow w-4 h-5 "
+            class="arrow w-4 h-5"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -47,7 +47,7 @@
         </button>
         <div
           v-show="isProjectsMenuOpen"
-          class="absolute flex mt-2 space-y-2 bg-white p-2 border rounded shadow-lg flex-col"
+          class="absolute flex mt-2 space-y-2 w-36 bg-white p-2 border rounded shadow-lg flex-col left-0 transform translate-x-[-100%]"
         >
           <!-- Список проектов -->
           <button
@@ -89,11 +89,11 @@ const scrollToProject = (projectId) => {
 </script>
 
 <style lang="scss" scoped>
-.arrow{
-height: 22px;
-margin-left: -9px;
+.arrow {
+  height: 22px;
+  margin-left: -9px;
 }
-.dropdown_btn{
+.dropdown_btn {
   margin-top: -9px;
   width: 10px;
 }

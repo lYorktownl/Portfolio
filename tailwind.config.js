@@ -19,9 +19,6 @@ module.exports = {
         'dark-blue': '#0A1524',
         'main-gray': '#272a2a' 
       },
-      backgroundImage: {
-        'my-background-image': "url('src/assets/fon1.jpg')",
-      },
     },
 
     

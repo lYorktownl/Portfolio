@@ -1,0 +1,78 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.bg-container {
+    position: relative;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 60%, rgba(0,212,255,1) 100%);
+}
+.bg-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #2ecc71; 
+} */
+/* 
+.bg-container1{
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+}
+.bg-container2{
+    background-image: repeating-linear-gradient(135deg, //↘
+      #2B3284 , #2B3284 100px, //100px
+      #4177BC 100px, #4177BC 105px, //5px
+      #2B3284 105px, #2B3284 130px, //25px
+      #4177BC 130px, #4177BC 260px, //130px
+      #FFFFFF 260px, #FFFFFF 265px, //5px
+      #4177BC 265px, #4177BC 270px, //5px
+      #FFFFFF 270px, #FFFFFF 330px //60px
+   );
+} */
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.bg-container3{
+    
+}
+.bg-container4{
+    
+}
+.bg-container5{
+    
+}
+.bg-container6{
+    
+}
