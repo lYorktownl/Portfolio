@@ -1,11 +1,11 @@
 <template>
   <div
-    class="bgrnd bg-opacity-50 bg-gradient-to-b h-fit from-[#1c418688] via-[#1c41864d] to-black border-blue-500 pt-14 ml-10 w-3/4 rounded-t-large relative"
+    class="   pt-14 xl:ml-10 xl:w-3/4 relative"
   >
-    <h1 class="text-5xl text-blue-200 font-semibold font-nunito absolute top-5 left-20">
+    <h1 class="text-5xl  font-semibold font-nunito absolute top-5 left-20">
       My pet-projects
     </h1>
-    <div class="mt-10 pb-16 text-blue-200">
+    <div class="mt-10 pb-16 ">
       <!-- здесь будут карточки проектов -->
       <Projects />
     </div>

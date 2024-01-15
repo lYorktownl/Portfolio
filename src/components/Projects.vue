@@ -1,9 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 
 <template>
-  <div class="grid grid-cols-1 mx-16 place-items-start">
+  <div class="grid grid-cols-1 mx-16 xl:pt-20 place-items-start">
     <div
-      class="p-[10px] m-[10px] ring flex divide-blue-500/70 divide-x-4 min-w-full"
+      class="p-[10px] m-[10px]  flex  min-w-full"
       v-for="project in projects"
       :key="project.id"
       :id="'project-' + project.id"
@@ -19,7 +19,7 @@
           v-if="project.link"
           :href="project.link"
           target="_blank"
-          class="border-b-2 border-blue-500 hover:text-fuchsia-500"
+          class="border-b-2 "
         >
           View on github
         </a>

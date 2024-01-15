@@ -12,7 +12,7 @@
       </li> -->
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 border-blue-500 rounded-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white shadow hover:shadow-lg shadow-sky-600"
+          class="px-4 py-2 border-2  rounded-full  hover:transition-all hover:duration-1000  shadow hover:shadow-lg "
           to="/"
         >
           About
@@ -20,7 +20,7 @@
       </li>
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 border-blue-500 rounded-s-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white shadow hover:shadow-lg shadow-sky-600"
+          class="px-4 py-2 border-2  rounded-s-full  hover:transition-all hover:duration-1000  shadow hover:shadow-lg "
           to="/projects"
         >
           Projects
@@ -28,7 +28,7 @@
       </li>
       <li class="relative space-x-0" @click="toggleProjectsMenu">
         <button
-          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px] border-blue-500 rounded-e-full hover:bg-blue-400 hover:text-white hover:transition-all hover:duration-1000 dark:text-white shadow hover:shadow-lg shadow-sky-600"
+          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px]  rounded-e-full   hover:transition-all hover:duration-1000  shadow hover:shadow-lg "
         >
           <svg
             class="arrow w-4 h-5"
@@ -54,7 +54,7 @@
             v-for="project in projects"
             :key="project.id"
             @click="scrollToProject(project.id)"
-            class="hover:bg-blue-400"
+            class=""
           >
             {{ project.name }}
           </button>
