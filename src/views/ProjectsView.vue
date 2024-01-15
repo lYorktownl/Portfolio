@@ -1,11 +1,7 @@
 <template>
-  <div
-    class="   pt-14 xl:ml-10 xl:w-3/4 relative"
-  >
-    <h1 class="text-5xl  font-semibold font-nunito absolute top-5 left-20">
-      My pet-projects
-    </h1>
-    <div class="mt-10 pb-16 ">
+  <div class="pt-14 xl:ml-10 xl:w-3/4 relative">
+    <h1 class="text-5xl font-semibold font-nunito absolute top-5 left-20">My pet-projects</h1>
+    <div class="mt-10 pb-16">
       <!-- здесь будут карточки проектов -->
       <Projects />
     </div>

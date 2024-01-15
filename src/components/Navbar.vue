@@ -12,7 +12,7 @@
       </li> -->
       <li>
         <RouterLink
-          class="px-4 py-2 border-2  rounded-full  hover:transition-all hover:duration-1000  shadow hover:shadow-lg "
+          class="px-4 py-2 border-2 rounded-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg"
           to="/"
         >
           About
@@ -20,7 +20,7 @@
       </li>
       <li>
         <RouterLink
-          class="px-4 py-2 border-2  rounded-s-full  hover:transition-all hover:duration-1000  shadow hover:shadow-lg "
+          class="px-4 py-2 border-2 rounded-s-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg"
           to="/projects"
         >
           Projects
@@ -28,7 +28,7 @@
       </li>
       <li class="relative space-x-0" @click="toggleProjectsMenu">
         <button
-          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px]  rounded-e-full   hover:transition-all hover:duration-1000  shadow hover:shadow-lg "
+          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px] rounded-e-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg"
         >
           <svg
             class="arrow w-4 h-5"
