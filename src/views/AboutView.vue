@@ -59,7 +59,7 @@
       преданность качественной веб-разработке. <br />
       Спасибо за посещение моего портфолио! Давайте вместе создавать удивительные веб-приложения.
     </p>
-    <div class="w-fit botom-0 right-0 absolute">
+    <div class="w-fit botom-0 right-1 absolute">
       <Footer />
     </div>
   </div>

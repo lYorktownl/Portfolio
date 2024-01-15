@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-20 relative xl:flex ">
+  <div class="sm:mx-20 relative xl:flex ">
     <div class="xl:sticky xl:top-[32px] h-fit">
       <SideCard />
     </div>
