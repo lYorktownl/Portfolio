@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex sticky h-fit p-3 mt-2 border-sky-950">
+  <div class="flex h-fit p-3 mt-2 border-sky-950">
     <ul class="flex space-x-4">
       <!-- <li>
         <RouterLink
@@ -97,4 +97,5 @@ const scrollToProject = (projectId) => {
   margin-top: -9px;
   width: 10px;
 }
+
 </style>

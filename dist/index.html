@@ -3,16 +3,38 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/Portfolio/favicon.ico">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <script type="module" crossorigin src="/Portfolio/assets/index-177e09c8.js"></script>
-    <link rel="stylesheet" href="/Portfolio/assets/index-9a3431d1.css">
+    <script type="module" crossorigin src="/Portfolio/assets/index-cafe718c.js"></script>
+    <link rel="stylesheet" href="/Portfolio/assets/index-40ea80df.css">
   </head>
-  <body class="relative min-s"  >
-    <div class="bg-container1">
-    <div id="app" class="py-8 bg-contain inset-0 bg-opacity-0 bg-repeat" style="background-image: url('src/assets/')"></div>
+  <body class="relative min-s">
+    <div class="title-sheet">
+      <h1>Добро пожаловать в маленький мир моего кода!</h1>
+      <p>Discover amazing content below</p>
+      <button onclick="scrollToContent()" class="animate-">Explore</button>
     </div>
+    <div id="app" class="app py-8 bg-contain inset-0 bg-opacity-0 bg-repeat" style="background-image: url('src/assets/')"></div>
     
+    <script>
+      const mainContent = document.getElementById('app');
+      
+      // Проверяем состояние при загрузке страницы
+      const showMainContent = sessionStorage.getItem('showMainContent');
+      
+      if (showMainContent === 'true') {
+        mainContent.style.display = 'block';
+      }
+
+      function scrollToContent() {
+        // Сбрасываем состояние при перезагрузке страницы
+        sessionStorage.removeItem('showMainContent');
+        
+        mainContent.style.display = 'block';
+        mainContent.scrollIntoView({ behavior: 'smooth' });
+      }
+    </script>
   </body>
 </html>
+

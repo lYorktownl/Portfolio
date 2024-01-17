@@ -1,7 +1,7 @@
 <template>
   <div class="border-2 pl-3 xl:ml-10 xl:w-3/4 relative">
     <h1 class="top-1 left-1 text-4xl mt-1 pr-[240px] text- font-semibold">
-      Добро пожаловать в маленький мир моего кода!
+      Немного обо мне
     </h1>
     <div class="absolute top-0 right-0">
       <Navbar />
@@ -69,7 +69,6 @@ import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 </script>
 <style>
-.backgrnd {
-  background-color: #002b683f;
-}
+
+
 </style>

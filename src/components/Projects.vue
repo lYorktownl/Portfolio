@@ -57,7 +57,7 @@ export default {
         {
           id: 3,
           name: 'Timer',
-          details: 'Obratnyi otstc.',
+          details: 'Obratnyi otstc. sgsdaf afsdfafa afadfadfadsdf s dsfdsfdsd',
           icon: 'assets/icons/timer-icon.svg',
           link: '',
           showDetails: false

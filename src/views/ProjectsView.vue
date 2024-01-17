@@ -1,14 +1,14 @@
 <template>
   <div class="pt-14 xl:ml-10 xl:w-3/4 relative">
-    <h1 class="text-5xl font-semibold font-nunito absolute top-5 left-20">My pet-projects</h1>
+    <h1 class="text-xl sm:text-5xl mt-5 text-center font-semibold font-nunito gt:absolute sm:top-5 sm:left-20">My pet-projects</h1>
     <div class="mt-10 pb-16">
       <!-- здесь будут карточки проектов -->
       <Projects />
     </div>
-    <div class="absolute top-0 right-0">
+    <div class="absolute top-0 sm:right-0 right-20">
       <Navbar />
     </div>
-    <div class="w-fit botom-0 right-0 absolute">
+    <div class="w-fit right-0 absolute">
       <Footer />
     </div>
   </div>
