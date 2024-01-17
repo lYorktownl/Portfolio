@@ -12,7 +12,7 @@
       :id="'project-' + project.id"
     >
       <div class="sm:min-w-48 sm:h-48 w-28 h-28 flex flex-col justify-center items-center mx-auto">
-        <img class="icon w-10 sm:w-20 h-20 items-center" :src="project.icon" alt="Project Icon" />
+        <img class="icon w-10 sm:w-20 h-20 items-center" :src="'/' + project.icon" alt="Project Icon" />
         <h3>{{ project.name }}</h3>
         <a v-if="project.link" :href="project.link" target="_blank" class="border-b-2">
           View on github
