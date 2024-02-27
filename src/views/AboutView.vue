@@ -1,21 +1,35 @@
 <template>
-  <div class="border-2 pl-3 xl:ml-10 xl:w-3/4 relative">
-    <h1 class="top-1 left-1 text-4xl mt-1 pr-[240px] text- font-semibold">
+  <div class="pl-3 xl:ml-10 xl:w-3/4  relative text-white snap-y snap-mandatory">
+    <h1 class="text-xl sm:text-[40px] sm:mt-0 mt-5 font-semibold font-nunito gt:absolute sm:top-5 sm:left-20 rounded-tl-[30px] p-3 rounded-br-[30px] bg-gray-600 w-fit border-4 border-teal-500">
       Немного обо мне
     </h1>
     <div class="absolute top-0 right-0">
       <Navbar />
     </div>
-    <div class="mt-6 mx-3 leading-relaxed">
-      <h2 class="text-xl">
-        Привет, меня зовут Никита, и я начинающий фронтенд разработчик с большой тягой к новым
-        знаниям и живым интересом к веб-разработке &#x1F525;
+                        
+                  <!--first block -->
+
+     <div class="p-1 xl:mt-[150px] xl:pt-0 mt-0 pt-28 mx-3 leading-relaxed snap-always snap-center"> 
+      <div class="flex space-x-6 h-auto">
+        <h2 class="text-2xl  font-opensans italic xl:w-auto ">
+        <p class="text-8xl tracking-wide mb-10">Привет,<br> меня зовут<br> <span class="text-teal-500 font-semibold">Никита</span></p>
+        <span class="text-[20px]">Я начинающий фронтенд разработчик с большой тягой к новым
+        знаниям и живым интересом к веб-разработке &#x1F525;</span>
       </h2>
-      <p class="font-nunito mt-2 text-lg">
+        <ul class="bg-[#1a1e23] min-w-fit h-fit p-3 rounded-large">
+          <li><span class="text-[30px] font-extrabold text-teal-500">many</span> hard skills</li>
+          <li><span class="text-[30px] font-extrabold text-teal-500 ">6</span> programming lang</li>
+          <li><span class="text-[30px] font-extrabold text-teal-500">just</span> good guy</li>
+          <li><span class="text-[30px] font-extrabold text-teal-500">5</span> personal projects</li>
+        </ul>
+      </div>
+      
+      <p class="font-nunito mt-20 bg-[#292f36f3] rounded-large p-3 text-lg ">
         Мой путь в веб-разработке начался еще со школы, когда я только начинал знакомиться с веб
         интерфейсом и HTML. Тогда еще не было таких замечательных вещей, как React и Vue, к примеру,
         но мне уже тогда полюбился фронтенд. И с тех пор я полностью погрузился в увлекательный мир
         создания интерактивных и красочных веб-приложений.
+        
       </p>
       <h2 class="text-xl mt-5">&#128187; Почему именно фронтенд?</h2>
       <p class="text-lg">
@@ -26,6 +40,11 @@
         делающее Интернет более удобным и функциональным, стали ключевыми моментами, определившими
         мой выбор этого направления.
       </p>
+    </div>
+
+               <!-- second block -->
+
+    <div class="second_block">
       <h2 class="text-xl mt-5">&#x1F4A1; Обучение</h2>
       <ul class="list-disc list-inside text-lg">
         <li class="block">
@@ -65,10 +84,11 @@
   </div>
 </template>
 <script setup>
-import Navbar from '../components/Navbar.vue'
-import Footer from '../components/Footer.vue'
+import Navbar from '../components/Navbar.vue';
+import Footer from '../components/Footer.vue';
+
+
 </script>
 <style>
-
 
 </style>

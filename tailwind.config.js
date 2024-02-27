@@ -13,7 +13,8 @@ module.exports = {
         '-92': '-342px'
       },
       fontFamily: {
-        'nunito': ['Nunito Sans', 'sans-serif']
+        'nunito': ['Nunito Sans', 'sans-serif'],
+        'opensans': ['Open Sans','sans-serif'],
       },
       colors: {
         'dark-blue': '#0A1524',

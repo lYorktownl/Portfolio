@@ -1,54 +1,67 @@
 
 .title-sheet {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; /* Цвет фона вашего титульного листа */
-    color: #333; /* Цвет текста */
-  }
-  
-  .title-sheet h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .title-sheet p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
-  
-  .title-sheet button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #3498db; /* Цвет фона кнопки */
-    color: #fff; /* Цвет текста кнопки */
-    border: none;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  
- 
-  .app {
-    display: none;
-    padding: 20px;
-    background-color: #f0f0f0; /* Цвет фона основного контента */
-    /* Добавьте дополнительные стили для основного контента, если это необходимо */
-  }
-  
-  body {
-    margin: 0; /* Убираем внешний отступ у body */
-    overflow: hidden; /* Запрещаем показ скролл-бара */
-  }
-  
-  /* Стили для title-sheet и основного контента (main-content) */
-  .title-sheet,
-  .app {
-    height: 100vh; /* Высота экрана */
-    overflow-y: auto; /* Разрешаем вертикальный скролл, если контент не помещается на экране */
-    scroll-behavior: smooth; /* Плавная прокрутка */
-  }
-  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/title-fon1.png");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.title-sheet h1 {
+  z-index: 1;
+}
+.title-sheet button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.app {
+  display: none;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #292F36;
+  background-image: url("/assets/fon2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.title-sheet,
+.app {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.cursor-glow {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(rgba(255, 255, 255, 0.7) 10%, transparent 70%);
+  border-radius: 50%;
+  mix-blend-mode: overlay;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Центрируем по центру курсора */
+  z-index: 0;
+}
+
+.title-sheet:hover .cursor-glow {
+  width: 350px;
+  height: 350px;
+}

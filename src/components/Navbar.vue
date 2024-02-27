@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="flex h-fit p-3 mt-2 border-sky-950">
+  <div class="flex h-fit p-3 mt-2 border-sky-950 ">
     <ul class="flex space-x-4">
       <!-- <li>
         <RouterLink
@@ -12,7 +12,7 @@
       </li> -->
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 rounded-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg"
+          class="px-4 py-2 border-2 rounded-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg active:bg-teal-800" :class="{ 'active-link': $route.path === '/' }"
           to="/"
         >
           About
@@ -20,7 +20,7 @@
       </li>
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 rounded-s-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg"
+          class="px-4 py-2 border-2 rounded-s-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg" :class="{ 'active-link': $route.path === '/projects' }"
           to="/projects"
         >
           Projects
@@ -28,7 +28,7 @@
       </li>
       <li class="relative space-x-0" @click="toggleProjectsMenu">
         <button
-          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px] rounded-e-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg"
+          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px] rounded-e-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg focus:bg-teal-800"
         >
           <svg
             class="arrow w-4 h-5"
@@ -47,7 +47,7 @@
         </button>
         <div
           v-show="isProjectsMenuOpen"
-          class="absolute flex mt-2 space-y-2 w-36 bg-white p-2 border rounded shadow-lg flex-col left-0 transform translate-x-[-100%]"
+          class="absolute flex mt-2 space-y-2 w-36 bg-white text-black p-2 border rounded shadow-lg flex-col left-0 transform translate-x-[-100%]"
         >
           <!-- Список проектов -->
           <button
@@ -97,5 +97,7 @@ const scrollToProject = (projectId) => {
   margin-top: -9px;
   width: 10px;
 }
-
+.active-link {
+  background-color: teal;
+}
 </style>

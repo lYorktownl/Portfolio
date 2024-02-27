@@ -6,35 +6,49 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <script type="module" crossorigin src="/Portfolio/assets/index-cafe718c.js"></script>
-    <link rel="stylesheet" href="/Portfolio/assets/index-40ea80df.css">
+    <script type="module" crossorigin src="/Portfolio/assets/index-61c81224.js"></script>
+    <link rel="stylesheet" href="/Portfolio/assets/index-ae8ce0c8.css">
   </head>
-  <body class="relative min-s">
-    <div class="title-sheet">
-      <h1>Добро пожаловать в маленький мир моего кода!</h1>
-      <p>Discover amazing content below</p>
+  <body class="relative min-s bg-[#292F36]">
+    <div class="title-sheet" id="titleSheet">
+      <h1 class="text-[#96f9ea] text-8xl font-semibold ml-10 pb-20 text-center">Добро пожаловать в маленький мир моего кода!</h1>
       <button onclick="scrollToContent()" class="animate-">Explore</button>
+      <div class="cursor-glow" id="cursorGlow"></div>
     </div>
-    <div id="app" class="app py-8 bg-contain inset-0 bg-opacity-0 bg-repeat" style="background-image: url('src/assets/')"></div>
+    <div id="app" class="app py-8 bg-cover inset-0 bg-opacity-0 bg-[rgb(41,47,54)]" style="background-image: url('/Portfolio/assets/')"></div>
     
     <script>
-      const mainContent = document.getElementById('app');
-      
-      // Проверяем состояние при загрузке страницы
-      const showMainContent = sessionStorage.getItem('showMainContent');
-      
-      if (showMainContent === 'true') {
-        mainContent.style.display = 'block';
-      }
-
+      // Определение функции в глобальной области видимости
       function scrollToContent() {
+        const mainContent = document.getElementById('app');
+
         // Сбрасываем состояние при перезагрузке страницы
         sessionStorage.removeItem('showMainContent');
         
         mainContent.style.display = 'block';
         mainContent.scrollIntoView({ behavior: 'smooth' });
       }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        const titleSheet = document.getElementById('titleSheet');
+        const cursorGlow = document.getElementById('cursorGlow');
+        
+        titleSheet.addEventListener('mousemove', (e) => {
+          const x = e.clientX;
+          const y = e.clientY;
+
+          cursorGlow.style.left = `${x}px`;
+          cursorGlow.style.top = `${y}px`;
+        });
+        
+        titleSheet.addEventListener('mouseleave', () => {
+          cursorGlow.style.opacity = '0';
+        });
+        
+        titleSheet.addEventListener('mouseenter', () => {
+          cursorGlow.style.opacity = '1';
+        });
+      });
     </script>
   </body>
 </html>
-
