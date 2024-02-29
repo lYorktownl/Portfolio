@@ -20,83 +20,24 @@
       </li>
       <li>
         <RouterLink
-          class="px-4 py-2 border-2 rounded-s-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg" :class="{ 'active-link': $route.path === '/projects' }"
+          class="px-4 py-2 border-2 rounded-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg" :class="{ 'active-link': $route.path === '/projects' }"
           to="/projects"
         >
           Projects
         </RouterLink>
       </li>
-      <li class="relative space-x-0" @click="toggleProjectsMenu">
-        <button
-          class="dropdown_btn px-4 py-2 border-2 -mt-2 -ml-[17px] rounded-e-full hover:transition-all hover:duration-1000 shadow hover:shadow-lg focus:bg-teal-800"
-        >
-          <svg
-            class="arrow w-4 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            ></path>
-          </svg>
-        </button>
-        <div
-          v-show="isProjectsMenuOpen"
-          class="absolute flex mt-2 space-y-2 w-36 bg-white text-black p-2 border rounded shadow-lg flex-col left-0 transform translate-x-[-100%]"
-        >
-          <!-- Список проектов -->
-          <button
-            v-for="project in projects"
-            :key="project.id"
-            @click="scrollToProject(project.id)"
-            class=""
-          >
-            {{ project.name }}
-          </button>
-        </div>
-      </li>
+      
     </ul>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import Projects from './Projects.vue'
 
-const isProjectsMenuOpen = ref(false)
-const projects = ref([])
 
-onMounted(() => {
-  projects.value = Projects.data().projects
-})
-
-const toggleProjectsMenu = () => {
-  isProjectsMenuOpen.value = !isProjectsMenuOpen.value
-}
-
-const scrollToProject = (projectId) => {
-  const projectElement = document.getElementById(`project-${projectId}`)
-  if (projectElement) {
-    projectElement.scrollIntoView({ behavior: 'smooth' })
-  }
-}
 </script>
 
 <style lang="scss" scoped>
-.arrow {
-  height: 22px;
-  margin-left: -9px;
-}
-.dropdown_btn {
-  margin-top: -9px;
-  width: 10px;
-}
 .active-link {
   background-color: teal;
 }

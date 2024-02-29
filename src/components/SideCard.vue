@@ -1,5 +1,5 @@
 <template>
-  <div class="block xl:block sm:flex sidebar xl:min-h-[450px] xl:mt-5 double-border mb-4 xl:w-64 w-auto rounded-tl-[150px] rounded-br-[150px] text-white">
+  <div class="block xl:block sm:flex sidebar xl:min-h-[450px] xl:mt-[160px] double-border mb-4 xl:w-64 w-auto rounded-tl-[150px] rounded-br-[150px] text-white">
     <div class="flex  xl:justify-center sm:justify-start justify-center m-7 sm:ml-auto">
       <img class="xl:h-auto h-48 ml-[40px] rounded-[100%] outline outline-4 outline-teal-500" src="/assets/avatar.jpg" alt="my photo" />
     </div>

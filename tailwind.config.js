@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         'nunito': ['Nunito Sans', 'sans-serif'],
         'opensans': ['Open Sans','sans-serif'],
+        'kufam': ['Kufam','sans-serif'],
       },
       colors: {
         'dark-blue': '#0A1524',
